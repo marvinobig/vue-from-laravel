@@ -5,7 +5,6 @@ import PostsCard from '@/components/PostsCard.vue';
 
 <template>
     <ContentContainer>
-      <h1>This is the posts page</h1>
       <PostsCard/>
     </ContentContainer>
 </template>
