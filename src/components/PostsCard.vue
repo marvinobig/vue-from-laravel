@@ -6,15 +6,14 @@ const posts = [1, 2, 3, 4, 5, 6];
     <article class="flex flex-col gap-[3em]">
         <section class="flex gap-3" v-for="(post, index) in posts" :key="index">
             <img src="" class="shadow-md rounded-lg border border-blue-800 w-full max-w-[250px] h-[250px]" alt="post">
-            <div
-                class="flex flex-col justify-between p-3 rounded-lg bg-gray-800 text-white capitalize w-full shadow-md">
+            <div class="flex flex-col justify-between p-3 rounded-lg bg-gray-800 text-white w-full shadow-md">
                 <div>
                     <a class="underline hover:text-blue-300" href="post-link">
-                        <h2 class="font-bold text-2xl mb-4">post title</h2>
+                        <h2 class="font-bold text-2xl mb-4 capitalize">post title</h2>
                     </a>
                     <p>post summary</p>
                 </div>
-                <p class="text-sm text-blue-300">post date</p>
+                <p class="text-sm text-blue-300 capitalize">post date</p>
             </div>
         </section>
     </article>
