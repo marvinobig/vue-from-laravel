@@ -1,5 +1,5 @@
 <template>
-    <main class="mx-auto p-4 max-w-[1000px]">
+    <main class="mx-auto p-3 max-w-[800px]">
         <slot>
         </slot>
     </main>
