@@ -1,8 +1,12 @@
 <script setup>
+import ContentContainer from '@/components/ContentContainer.vue';
+
 </script>
 
 <template>
   <main>
-    <h1>Frontpage</h1>
+    <ContentContainer>
+      <h1>Frontpage</h1>
+    </ContentContainer>
   </main>
 </template>
