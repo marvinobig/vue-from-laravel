@@ -1,0 +1,3 @@
+<template>
+    <h1>Individual post</h1>
+</template>
