@@ -8,8 +8,8 @@ import ContentContainer from '@/components/ContentContainer.vue';
         <img class="aspect-16/9 object-cover rounded-lg my-3 mb-6" src="../assets/banner.jpg" alt="banner">
 
         <section class="flex items-center justify-between">
-            <RouterLink class="bg-gray-800 py-2 px-5 rounded-lg text-white underline hover:text-blue-300"
-                to="/posts/dummy-post">
+            <RouterLink class="bg-gray-800 py-2 px-5 rounded-lg text-white hover:text-blue-300"
+                to="/posts">
                 <h2 class="text-lg capitalize">Back</h2>
             </RouterLink>
             <p class="text-sm text-gray-500 capitalize">post date</p>
