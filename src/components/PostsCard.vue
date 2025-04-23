@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, watch } from 'vue';
 import { useSearchStore } from '@/stores/search';
+import moment from 'moment'
 
 const posts = ref([]);
 const filteredPosts = ref([]);
@@ -36,7 +37,7 @@ watch(() => query.search, (newSearch) => {
       <div class="flex items-center justify-between p-3 rounded-lg bg-gray-800 text-white w-full shadow-md">
         <div class="flex flex-col gap-2">
           <h2 class="font-bold text-2xl capitalize">{{ post.title }}</h2>
-          <p class="text-sm text-blue-300 capitalize">{{ post.created_at }}</p>
+          <p class="text-sm text-blue-300 capitalize">{{ moment(post.created_at).format('dddd LL') }}</p>
         </div>
         <RouterLink class="capitalize rounded-lg bg-blue-300 py-2 px-4 text-black cursor-pointer"
           :to="`/posts/${post.id}`">

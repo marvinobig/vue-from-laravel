@@ -2,6 +2,7 @@
 import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router'
 import ContentContainer from '@/components/ContentContainer.vue';
+import moment from 'moment';
 
 const post = ref(null);
 const route = useRoute();
@@ -35,7 +36,7 @@ onMounted(async () => {
       <RouterLink class="bg-gray-800 py-2 px-5 rounded-lg text-white hover:text-blue-300" to="/posts">
         <h2 class="text-lg capitalize">Back</h2>
       </RouterLink>
-      <p class="text-sm text-gray-500 capitalize">{{ post.created_at }}</p>
+      <p class="text-sm text-gray-500 capitalize">{{ moment(post.created_at).format('dddd LL') }}</p>
     </section>
 
     <section v-if="post" class="my-6">
