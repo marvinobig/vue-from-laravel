@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, watch } from 'vue';
 import { useSearchStore } from '@/stores/search';
-import moment from 'moment'
+import moment from 'moment';
 
 const posts = ref([]);
 const filteredPosts = ref([]);
@@ -12,7 +12,7 @@ onMounted(async () => {
     const request = await fetch('http://127.0.0.1:8000/api/v1/posts');
 
     if (!request.ok) {
-      throw new Error("Request Failed")
+      throw new Error("Request Failed");
     }
 
     const response = await request.json();
@@ -24,10 +24,11 @@ onMounted(async () => {
 });
 
 watch(() => query.search, (newSearch) => {
-  const search = newSearch.toLowerCase()
+  const search = newSearch.toLowerCase();
+
   filteredPosts.value = posts.value.filter((post) =>
     post.title.toLowerCase().includes(search)
-  )
+  );
 });
 </script>
 

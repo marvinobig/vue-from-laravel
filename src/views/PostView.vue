@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { useRoute } from 'vue-router'
+import { useRoute } from 'vue-router';
 import ContentContainer from '@/components/ContentContainer.vue';
 import moment from 'moment';
 
@@ -14,11 +14,10 @@ onMounted(async () => {
     const request = await fetch(url);
 
     if (!request.ok) {
-      throw new Error(`Request for post: ${id} failed`)
+      throw new Error(`Request for post: ${id} failed`);
     }
 
     const response = await request.json();
-    console.log(response);
 
     post.value = response.post;
 
