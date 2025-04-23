@@ -1,35 +1,40 @@
-# vue-from-wordpress
+# Vue from Laravel (Frontend)
 
-This template should help get you started developing with Vue 3 in Vite.
+This is the **Vue.js frontend** for a Laravel backend. It consumes API endpoints exposed by a Laravel backend and is structured using modern Vue 3 best practices.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Features
 
-## Customize configuration
+- Vue 3 Composition API
+- Vue Router for client-side navigation
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## Prerequisites
 
-```sh
-npm install
-```
+- Node.js (v16+ recommended)
+- npm 
 
-### Compile and Hot-Reload for Development
+## Installation
 
-```sh
-npm run dev
-```
+1. **Clone the repo**
 
-### Compile and Minify for Production
+   ```bash
+   git clone https://github.com/marvinobig/vue-from-laravel.git
+   cd vue-from-laravel
+   ```
 
-```sh
-npm run build
-```
+2. **Install dependencies**
 
-### Lint with [ESLint](https://eslint.org/)
+   ```bash
+   npm install
+   ```
 
-```sh
-npm run lint
-```
+3. **Run development server**
+
+   ```bash
+   npm run dev
+   ```
+
+---
