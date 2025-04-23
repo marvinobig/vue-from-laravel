@@ -16,7 +16,7 @@ onMounted(async () => {
     }
 
     const response = await request.json();
-    posts.value = response.posts.filter((post) => post.status);
+    posts.value = response.posts.filter((post) => post.status).reverse();
     filteredPosts.value = posts.value;
   } catch (err) {
     console.error(`${err.message}`);
